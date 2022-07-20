@@ -74,7 +74,7 @@
 }
 
 @media (max-width: 480px) {
-	hero__container {
+	.hero__container {
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
