@@ -20,7 +20,7 @@
 					<path d="M4.5 27H31.5V24H4.5V27ZM4.5 19.5H31.5V16.5H4.5V19.5ZM4.5 9V12H31.5V9H4.5Z" />
 				</svg>
 			</button>
-			<nav class="header__navigation navigation header__navigation_open">
+			<nav class="header__navigation navigation">
 				<ul class="navigation__list">
 					<li class="navigation__item">
 						<a href="#" class="navigation__link">Почему выбирают нас?</a>
@@ -32,7 +32,43 @@
 			</nav>
 		</div>
 	</header>
-	<main></main>
+	<main>
+		<section class="hero">
+			<div class="container hero__container">
+				<h1 class="hero__title">Crypto</h1>
+				<p class="hero__subtitle">Ваш самый надежный сервис обмена криптовалюты</p>
+				<button class="hero__btn">Зарегистрироваться</button>
+			</div>
+		</section>
+	</main>
+	<div class="overlay">
+		<div class="modal">
+			<div class="modal__container">
+				<h2 class="modal__title">Мгновенная регистрация на платформе</h2>
+				<form action="#" class="modal__form">
+					<fieldset class="modal__person">
+						<label class="modal__label">Имя
+							<input class="modal__input" type="text" name="name">
+						</label>
+						<label class="modal__label">Фамилия
+							<input class="modal__input" type="text" name="surname">
+						</label>
+						<label class="modal__label">Номер телефона
+							<input class="modal__input" type="text" name="tel">
+						</label>
+					</fieldset>
+					<button class="modal__order" type="submit">Зарегистрироваться</button>
+					<button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+						<svg width="28" height="28" viewbox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M14 0C6.2 0 0 6.2 0 14C0 21.8 6.2 28 14 28C21.8 28 28 21.8 28 14C28 6.2 21.8 0 14 0ZM19.4 21L14 15.6L8.6 21L7 19.4L12.4 14L7 8.6L8.6 7L14 12.4L19.4 7L21 8.6L15.6 14L21 19.4L19.4 21Z" />
+						</svg>
+
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
 	<footer></footer>
 
 </body>
