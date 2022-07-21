@@ -85,7 +85,13 @@ p {
 	}
 }
 
-@media(max-width480) {
+@media(max-width: 768px) {
+	.container {
+		max-width: 740px;
+	}
+}
+
+@media(max-width: 480px) {
 	.container {
 		padding: 0 15px;
 	}
