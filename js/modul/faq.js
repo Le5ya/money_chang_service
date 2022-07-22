@@ -9,11 +9,29 @@ const hide = (elem, answer) => {
 	answer.style.transition = 'height 0.36s ease-in-out';
 	elem.classList.remove('faq__item-show');
 
+	setTimeout(() => {
+		answer.style.display = '';
+		answer.style.height = '';
+		answer.style.overflow = '';
+		answer.style.transition = '';
+	}, 360)
 
 }
+
+
+
 const show = (elem, answer) => {
 	if (elem.classList.contains('faq__item-show')) return;
 
+	setTimeout(() => {
+		answer.style.display = '';
+		answer.style.height = '';
+		answer.style.overflow = '';
+		answer.style.transition = '';
+	}, 360)
+
+
+	elem.classList.add('faq__item-show');
 	answer.style.display = 'block';
 	const height = answer.offsetHeight;
 	answer.style.height = 0;
@@ -21,8 +39,6 @@ const show = (elem, answer) => {
 	answer.style.transition = 'height 0.36s ease-in-out';
 	answer.offsetHeight;
 	answer.style.height = `${height}px`;
-
-	elem.classList.add('faq__item-show');
 }
 
 
