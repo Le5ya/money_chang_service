@@ -1,6 +1,6 @@
 
 const hide = (elem, answer) => {
-	if (!elem.classlist.contains('faq__item-show')) return;
+	if (!elem.classList.contains('faq__item-show')) return;
 	answer.style.height = `${answer.offsetHeight}px`;
 	answer.offsetHeight;
 	answer.style.display = 'block';
@@ -12,7 +12,7 @@ const hide = (elem, answer) => {
 
 }
 const show = (elem, answer) => {
-	if (elem.classlist.contains('faq__item-show')) return;
+	if (elem.classList.contains('faq__item-show')) return;
 
 	answer.style.display = 'block';
 	const height = answer.offsetHeight;
